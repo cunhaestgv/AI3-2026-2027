@@ -20,10 +20,10 @@ Este repositório contém os exercícios e tarefas da disciplina. Segue este gui
 ## 0. Pré-requisitos
 
 - **Conta no GitHub** ([criar aqui](https://github.com/signup)).
-- **Git instalado** ([download](https://git-scm.com/downloads)). Verifica com `git --version`.
 
-**Se NÃO for utilizado o IntelliJ podem ser seguidos os passos seguintes para configurar o repositório Git em linha de comando**
+Se NÃO for utilizado o IntelliJ podem ser seguidos os passos seguintes para configurar o repositório Git em linha de comando:
 - **Identidade configurada** (só é preciso fazer uma vez por computador):
+- **Git instalado** ([download](https://git-scm.com/downloads)). Verifica com `git --version`.
 
   ```bash
   git config --global user.name "O Teu Nome"
@@ -42,10 +42,10 @@ Esta secção faz-se **uma única vez**, no início do semestre.
 
 ### 1.1. Fazer *fork* do repositório
 
-Na página do repositório do docente ([`cunhaestgv/SD-2026-2027`](https://github.com/cunhaestgv/SD-2026-2027)), clica em **Fork** (canto superior direito) para criar uma cópia pessoal na tua conta:
+Na página do repositório do docente ([`cunhaestgv/AI3-2026-2027`](https://github.com/cunhaestgv/AI3-2026-2027)), clica em **Fork** (canto superior direito) para criar uma cópia pessoal na tua conta:
 
 ```text
-cunhaestgv/SD-2026-2027   →   O-TEU-UTILIZADOR/SD-2026-2027
+cunhaestgv/AI3-2026-2027   →   O-TEU-UTILIZADOR/AI3-2026-2027
 ```
 
 ### 1.2. Clonar o *teu fork* para a máquina local
@@ -53,8 +53,8 @@ cunhaestgv/SD-2026-2027   →   O-TEU-UTILIZADOR/SD-2026-2027
 > ⚠️ Atenção: o clone é feito a partir do **teu fork**, não do repositório do docente. Substitui `O-TEU-UTILIZADOR` pelo teu nome de utilizador do GitHub.
 
 ```bash
-git clone https://github.com/O-TEU-UTILIZADOR/SD-2026-2027.git
-cd SD-2026-2027
+git clone https://github.com/O-TEU-UTILIZADOR/AI3-2026-2027.git
+cd AI3-2026-2027
 ```
 
 ### 1.3. Adicionar o repositório do docente como `upstream`
@@ -62,7 +62,7 @@ cd SD-2026-2027
 O `upstream` é a ligação ao repositório original, que permite receber as novas tarefas publicadas pelo docente:
 
 ```bash
-git remote add upstream https://github.com/cunhaestgv/SD-2026-2027.git
+git remote add upstream https://github.com/cunhaestgv/AI3-2026-2027.git
 ```
 
 ### 1.4. Confirmar que está tudo correto
@@ -74,10 +74,10 @@ git remote -v
 O resultado esperado é:
 
 ```text
-origin    https://github.com/O-TEU-UTILIZADOR/SD-2026-2027.git (fetch)
-origin    https://github.com/O-TEU-UTILIZADOR/SD-2026-2027.git (push)
-upstream  https://github.com/cunhaestgv/SD-2026-2027.git (fetch)
-upstream  https://github.com/cunhaestgv/SD-2026-2027.git (push)
+origin    https://github.com/O-TEU-UTILIZADOR/AI3-2026-2027.git (fetch)
+origin    https://github.com/O-TEU-UTILIZADOR/AI3-2026-2027.git (push)
+upstream  https://github.com/cunhaestgv/AI3-2026-2027.git (fetch)
+upstream  https://github.com/cunhaestgv/AI3-2026-2027.git (push)
 ```
 
 | *Remote* | Aponta para | Serve para |
@@ -133,8 +133,8 @@ git push origin tarefa-1
 1. Acede à página do **teu fork** no GitHub.
 2. Clica no botão **Compare & pull request** que aparece relativo à branch enviada (`tarefa-1`).
 3. Confirma a direção do PR:
-   - **base repository:** `cunhaestgv/SD-2026-2027` · **base:** `main`
-   - **head repository:** `O-TEU-UTILIZADOR/SD-2026-2027` · **compare:** `tarefa-1`
+   - **base repository:** `cunhaestgv/AI3-2026-2027` · **base:** `main`
+   - **head repository:** `O-TEU-UTILIZADOR/AI3-2026-2027` · **compare:** `tarefa-1`
 4. Dá um título claro ao PR (ex.: `Tarefa UDP001`) e descreve brevemente o que foi feito.
 5. Clica em **Create pull request** e aguarda a revisão do docente.
 
@@ -251,7 +251,7 @@ Vai ao separador **Pull requests** do repositório do docente → **New pull req
 <details>
 <summary><strong>Enviei o PR para o sítio errado</strong></summary>
 
-Fecha o Pull Request e abre um novo, confirmando que **base repository** é `cunhaestgv/SD-2026-2027` e **base** é `main`.
+Fecha o Pull Request e abre um novo, confirmando que **base repository** é `cunhaestgv/AI3-2026-2027` e **base** é `main`.
 </details>
 
 <details>
