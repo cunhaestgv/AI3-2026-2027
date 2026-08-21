@@ -8,7 +8,7 @@ Este repositório contém os exercícios e tarefas da disciplina. Segue este gui
 
 - [0. Pré-requisitos](#0-pré-requisitos)
 - [1. Configuração inicial (setup)](#1-configuração-inicial-setup)
-- [2. Fluxo de trabalho passo a passo](#2-fluxo-de-trabalho-passo-a-passo)
+- [2. Fluxo de trabalho para uma nova tarefa](#2-fluxo-de-trabalho-para-uma-nova-tarefa)
 - [3. Avaliação e integração de novas tarefas](#3-avaliação-e-integração-de-novas-tarefas)
 - [4. Exemplo prático completo (Tarefa 2)](#4-exemplo-prático-completo-tarefa-2)
 - [5. Referência rápida de comandos](#5-referência-rápida-de-comandos)
@@ -21,9 +21,11 @@ Este repositório contém os exercícios e tarefas da disciplina. Segue este gui
 
 - **Conta no GitHub** ([criar aqui](https://github.com/signup)).
 
-Se NÃO for utilizado o IntelliJ podem ser seguidos os passos seguintes para configurar o repositório Git em linha de comando:
-- **Identidade configurada** (só é preciso fazer uma vez por computador):
+Se utilizares o IntelliJ, podes fazer todas as operações de Git pelo próprio IDE (menu **Git**). Se **não** usares o IntelliJ, ou se preferires a linha de comandos, precisas ainda do seguinte:
+
 - **Git instalado** ([download](https://git-scm.com/downloads)). Verifica com `git --version`.
+
+- **Identidade configurada** (só é preciso fazer uma vez por computador):
 
   ```bash
   git config --global user.name "O Teu Nome"
@@ -31,8 +33,8 @@ Se NÃO for utilizado o IntelliJ podem ser seguidos os passos seguintes para con
   ```
 
 - **Autenticação configurada.** O GitHub já não aceita palavra-passe na linha de comandos. Usa uma das opções:
-   - [GitHub CLI](https://cli.github.com/): `gh auth login` (mais simples);
-   - ou uma [chave SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh).
+  - [GitHub CLI](https://cli.github.com/): `gh auth login` (mais simples);
+  - ou uma [chave SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh).
 
 ---
 
@@ -82,8 +84,10 @@ upstream  https://github.com/cunhaestgv/AI3-2026-2027.git (push)
 
 | *Remote* | Aponta para | Serve para |
 | --- | --- | --- |
-| `origin` | O **teu** fork | Enviar (*push*) o teu trabalho |
+| `origin` | O **teu** fork | Enviar (*push*) e receber o teu trabalho |
 | `upstream` | Repositório do **docente** | Receber (*fetch*) novas tarefas |
+
+> ℹ️ O `git remote -v` mostra também uma linha `(push)` para o `upstream`, mas **não tens permissão de escrita nesse repositório**. Todo o teu trabalho é enviado para o `origin` e chega ao docente através de Pull Request.
 
 ---
 
@@ -107,10 +111,10 @@ git push origin main
 Nunca trabalhes diretamente na `main`. Cria uma branch nova por cada exercício:
 
 ```bash
-git checkout -b tarefa-1
+git checkout -b tarefa-udp001
 ```
 
-**Convenção de nomes:** letras minúsculas, sem acentos nem espaços — `tarefa-1`, `tarefa-2`, `tarefa-3-extra`.
+**Convenção de nomes:** letras minúsculas, sem acentos nem espaços, prefixo `tarefa-` seguido do identificador do enunciado — `tarefa-1`, `tarefa-2`, `tarefa-udp001`.
 
 ### Passo C — Trabalhar, fazer *commit* e *push*
 
@@ -119,26 +123,26 @@ Resolve o exercício, guarda o progresso com *commits* e envia a branch para o t
 ```bash
 git status                 # ver o que foi alterado
 git add .                  # preparar as alterações
-git commit -m "Resolução da Tarefa 1: cliente/servidor TCP"
-git push origin tarefa-1
+git commit -m "Resolução da Tarefa UDP001: cliente/servidor UDP"
+git push origin tarefa-udp001
 ```
 
 **Boas práticas de *commit*:**
 
-- Escreve mensagens no commit que descrevam **o que** foi feito: `"Implementação da Tarefa UDP001"` em vez de `"update"` ou `"cenas"`.
-- Não envies ficheiros gerados pela compilação nem pastas do IDE (`bin/`, `target/`, `.idea/`, `node_modules/`) — usa um ficheiro `.gitignore`.
+- Escreve mensagens que descrevam **o que** foi feito: `"Resolução da Tarefa UDP001: cliente/servidor UDP"` em vez de `"update"` ou `"cenas"`.
+- Não envies ficheiros gerados pela compilação nem pastas do IDE (`bin/`, `out/`, `target/`, `.idea/`, `node_modules/`). Usa um ficheiro `.gitignore` na raiz do projeto; podes gerar um adequado à tua linguagem e IDE em [gitignore.io](https://www.toptal.com/developers/gitignore).
 
 ### Passo D — Criar o *Pull Request* (PR) para avaliação
 
 1. Acede à página do **teu fork** no GitHub.
-2. Clica no botão **Compare & pull request** que aparece relativo à branch enviada (`tarefa-1`).
+2. Clica no botão **Compare & pull request** que aparece relativo à branch enviada (`tarefa-udp001`).
 3. Confirma a direção do PR:
    - **base repository:** `cunhaestgv/AI3-2026-2027` · **base:** `main`
-   - **head repository:** `O-TEU-UTILIZADOR/AI3-2026-2027` · **compare:** `tarefa-1`
+   - **head repository:** `O-TEU-UTILIZADOR/AI3-2026-2027` · **compare:** `tarefa-udp001`
 4. Dá um título claro ao PR (ex.: `Tarefa UDP001`) e descreve brevemente o que foi feito.
 5. Clica em **Create pull request** e aguarda a revisão do docente.
 
-> 💡 Podes continuar a fazer *commits* e *push* para a branch `tarefa-1` depois de abrires o PR — o Pull Request atualiza-se automaticamente. É assim que se aplicam as correções pedidas na revisão.
+> 💡 Podes continuar a fazer *commits* e *push* para a branch `tarefa-udp001` depois de abrires o PR — o Pull Request atualiza-se automaticamente. É assim que se aplicam as correções pedidas na revisão.
 
 ---
 
@@ -160,8 +164,8 @@ git merge upstream/main
 git push origin main
 
 # (Opcional) Eliminar a branch da tarefa já concluída
-git branch -d tarefa-1              # local
-git push origin --delete tarefa-1   # no teu fork do GitHub
+git branch -d tarefa-udp001              # local
+git push origin --delete tarefa-udp001   # no teu fork do GitHub
 ```
 
 ---
@@ -192,16 +196,16 @@ git push origin tarefa-2
 
 ## 5. Referência rápida de comandos
 
-| Objetivo                                        | Comando |
-|-------------------------------------------------| --- |
-| Ver o estado do repositório                     | `git status` |
-| Ver em que branch estou                         | `git branch` |
-| Ver o histórico resumido                        | `git log --oneline --graph --all` |
-| Mudar de branch                                 | `git checkout nome-da-branch` |
-| Criar e mudar para uma branch                   | `git checkout -b nome-da-branch` |
-| Ver alterações ainda não preparadas             | `git diff` |
-| Descartar alterações num ficheiro               | `git restore ficheiro.txt` |
-| Obter novos ficheiros do respositório do docente | `git fetch upstream && git merge upstream/main` |
+| Objetivo | Comando |
+| --- | --- |
+| Ver o estado do repositório | `git status` |
+| Ver em que branch estou | `git branch` |
+| Ver o histórico resumido | `git log --oneline --graph --all` |
+| Mudar de branch | `git checkout nome-da-branch` |
+| Criar e mudar para uma branch | `git checkout -b nome-da-branch` |
+| Ver alterações ainda não preparadas | `git diff` |
+| Descartar alterações num ficheiro | `git restore ficheiro.txt` |
+| Obter novos ficheiros do repositório do docente | `git fetch upstream && git merge upstream/main` |
 
 ---
 
@@ -210,13 +214,16 @@ git push origin tarefa-2
 <details>
 <summary><strong>Fiz commits na branch <code>main</code> por engano</strong></summary>
 
-Move o trabalho para uma branch nova (ainda não foi feito *push*):
+Move o trabalho para uma branch nova (assumindo que ainda não foi feito *push* da `main`):
 
 ```bash
-git checkout -b tarefa-1     # leva os commits para a nova branch
+git checkout -b tarefa-1         # leva os commits para a nova branch
 git checkout main
-git reset --hard upstream/main   # limpa a main (perde alterações não commitadas!)
+git fetch upstream               # necessário para o passo seguinte
+git reset --hard upstream/main   # repõe a main como está no docente
 ```
+
+> ⚠️ O `reset --hard` descarta definitivamente tudo o que estiver na `main` e não tiver sido levado para a nova branch, incluindo alterações por confirmar. Confirma primeiro com `git log --oneline` que os commits já estão em `tarefa-1`.
 </details>
 
 <details>
@@ -243,7 +250,7 @@ git branch -D tarefa-1
 </details>
 
 <details>
-<summary><strong>O botão "Compare & pull request" não aparece</strong></summary>
+<summary><strong>O botão "Compare &amp; pull request" não aparece</strong></summary>
 
 Vai ao separador **Pull requests** do repositório do docente → **New pull request** → **compare across forks** e seleciona manualmente a tua branch.
 </details>
