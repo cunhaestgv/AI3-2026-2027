@@ -1,39 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="mistral-large-latest" />
+    <option name="selectedProviderName" value="8f013610-2b60-4c36-a988-b693adb560c2" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="31400af4-c674-4fa5-a0c6-c878b5d3a67d" name="ai3-2026-2027-1 Tarefa XML001" comment="">
-      <change beforePath="$PROJECT_DIR$/Tasks/XML/XML001-anatomia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks/XML/XML001-arvore.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks/XML/XML001.md" beforeDir="false" />
-    </list>
-    <list id="417bada4-994a-472a-b2c0-4d1c25b0b7e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.clawdea/wiki/.drift-state.json" beforeDir="false" />
+    <list default="true" id="31400af4-c674-4fa5-a0c6-c878b5d3a67d" name="ai3-2026-2027-1 Tarefa XML001" comment="Tarefa XML001">
+      <change afterPath="$PROJECT_DIR$/Tasks/XML001/XML001.url" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clawdea/wiki/.drift-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.clawdea/wiki/.drift-state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/claudeCodeEditorTabs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enunciado.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list id="417bada4-994a-472a-b2c0-4d1c25b0b7e3" name="Changes" comment="Tarefa XML001" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/cunha/Library/CloudStorage/Dropbox/Sincro3/ESTV/2025-2026/2026-2027/AI3/Repository" value="3Hu5FjcWGtdb8EPcenNCSiaRzYU" />
+    </persistenceIdMap>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "cunhaestgv"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cunhaestgv&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/cunhaestgv/AI3-2026-2027.git",
-    "accountId": "92f77999-afc8-4e95-b280-035af4d624a7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cunhaestgv/AI3-2026-2027.git&quot;,
+    &quot;accountId&quot;: &quot;92f77999-afc8-4e95-b280-035af4d624a7&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -42,10 +45,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3Hr8m16oQ402mwfgcqlNdEiwLv5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -55,16 +58,34 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/cunha/Library/CloudStorage/Dropbox/Sincro3/ESTV/2025-2026/2026-2027/AI3/Repository",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Tasks/XML001" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task id="Default" summary="Default task">
       <changelist id="417bada4-994a-472a-b2c0-4d1c25b0b7e3" name="Changes" comment="" />
@@ -75,15 +96,47 @@
     </task>
     <task active="true" id="ai3-2026-2027-1" summary="Tarefa XML001">
       <changelist id="31400af4-c674-4fa5-a0c6-c878b5d3a67d" name="ai3-2026-2027-1 Tarefa XML001" comment="" />
-      <option name="closed" value="true" />
       <created>1786612367000</created>
       <option name="issue" value="true" />
       <url>https://github.com/cunhaestgv/AI3-2026-2027/issues/1</url>
       <option name="number" value="1" />
       <option name="presentableId" value="ai3-2026-2027-1" />
       <option name="project" value="ai3-2026-2027" />
-      <updated>1786616827218</updated>
+      <updated>1786619854000</updated>
     </task>
+    <task id="LOCAL-00001" summary="Tarefa XML001">
+      <option name="closed" value="true" />
+      <created>1786618218952</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1786618218952</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tarefa XML001">
+      <option name="closed" value="true" />
+      <created>1786618275637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1786618275638</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tarefa XML001">
+      <option name="closed" value="true" />
+      <created>1786618369132</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786618369132</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Tarefa XML001">
+      <option name="closed" value="true" />
+      <created>1786618406407</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1786618406407</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <option name="createBranch" value="false" />
     <option name="commitChanges" value="false" />
     <servers>
@@ -112,5 +165,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tarefa XML001" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tarefa XML001" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
